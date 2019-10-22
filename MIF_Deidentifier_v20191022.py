@@ -1,29 +1,28 @@
 
 #--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#--@@@ MIF De-identifier by Wes McNeely 10/22/2019                                               
+#--@@@ MIF De-identifier by wsm 10/22/2019                                               
 #--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #--@@@ Purpose: De-identify MIFs exported from Maven                                       
 #--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #--@@@ Instructions: 
-#--@@@ 				1. create folder and copy this file into it                  
-#--@@@              2. in the same folder create three subfolders named MIF_With_PHI, 
-#--@@@					MIF_Holding, and MIF_No_PHI (or whatever you think appropriate)
-#--@@@				3. make sure all needed libraries are installed using pip. Some come with Python already, 
-#--@@@				   	others don't. Just install the non-default ones. 	
-#--@@@    			4. check the section "Set Vars" to ensure the folders created in step 2 match
-#--@@@              5. place individual exported cases containing PHI in the MIF_With_PHI folder i.e. 1 maven case #--@@@ 				   per file x as many files as you like in the folder i.e. export one case at a time. 
-#--@@@              6. execute script 
-#--@@@              7. check the output folder MIF_No_PHI for your de-identified MIFs                           
-#--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#--@@@ For Help:     wesley.mcneely@houstontx.gov                          
+#--@@@ 		1. create folder and copy this file into it                  
+#--@@@          2. in the same folder create three subfolders named MIF_With_PHI, 
+#--@@@			MIF_Holding, and MIF_No_PHI (or whatever you think appropriate)
+#--@@@		3. make sure all needed libraries are installed using pip. Some come with Python already, 
+#--@@@			others don't. Just install the non-default ones. 	
+#--@@@    	4. check the section "Set Vars" to ensure the folders you created in step 2 match the addresses
+#--@@@          5. place individual exported cases containing PHI in the MIF_With_PHI folder i.e. 1 maven case per file				   per file x as many files as you like in the folder i.e. export one case at a time. 
+#--@@@          6. execute script 
+#--@@@          7. check the output folder MIF_No_PHI for your de-identified MIFs                           
 #--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
 
 
-#import io
+
+import io
 import os
-#from pathlib import Path
+from pathlib import Path
 import sys
 import shutil
 from shutil import copyfile as copy_file
