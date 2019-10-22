@@ -1,2 +1,2 @@
 # Python4Maven
-Python Scripts for working with Maven
+Python scripts for working with Maven
