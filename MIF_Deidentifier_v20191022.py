@@ -15,7 +15,7 @@
 #--@@@              6. execute script 
 #--@@@              7. check the output folder MIF_No_PHI for your de-identified MIFs                           
 #--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-#--@@@ For Help:     wesley.mcneely@houstontx.gov, 281-433-7934                                
+#--@@@ For Help:     wesley.mcneely@houstontx.gov                          
 #--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
